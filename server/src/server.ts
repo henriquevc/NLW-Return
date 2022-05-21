@@ -8,6 +8,6 @@ app.use(cors())
 app.use(express.json())
 app.use(routes)
 
-app.listen(3333, () => {
-    console.log('http://localhost:3333 server is running')
+app.listen(process.env.PORT || 3333, () => {
+    console.log('http server is running')
 })
